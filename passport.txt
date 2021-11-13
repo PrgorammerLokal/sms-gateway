@@ -1,0 +1,8 @@
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: 06WxER2NAbGT05PWB8ewPJltExjdc84svWFKXQ4m
+Password grant client created successfully.
+Client ID: 2
+Client secret: KnDWI1vwkGjZN9w53CMkmbxlIygdC2oVD9xfuI9Z
+PS C:\Users\fawai\Documents\laravel\lumen-passport>
