@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bd5c1bb59a06019bfecb5207ca884a5",
+    "content-hash": "2911e6a1e65d2009b23be79acde07eed",
     "packages": [
         {
             "name": "brick/math",
@@ -2262,7 +2262,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v8.69.0",
+            "version": "v8.72.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",

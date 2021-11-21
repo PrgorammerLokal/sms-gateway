@@ -2,6 +2,7 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use Illuminate\Http\Request;
 use Nexmo\Laravel\Facade\Nexmo;
 
 // use Nexmo\Laravel\Facade\Nexmo;
@@ -29,6 +30,23 @@ $router->group(['prefix' => 'auth'], function () use ($router) {
     $router->post('login', 'AuthController@login');
     $router->post('register', 'AuthController@register');
     $router->post('logout', ['middleware' => 'auth', 'uses' => 'AuthController@logout']);
+});
+// route otp
+$router->group(['prefix' => 'otp'], function () use ($router) {
+    $router->post('send', 'OtpController@send');
+    $router->post('verify', 'OtpController@verify');
+});
+
+
+
+// tes session
+$router->get('/session', function (Request $request) {
+    $request->session()->put('otp', '52526');
+    // $request->session()->flush();
+    return response()->json([
+        'status' => true,
+        'message' => $request->session()->get('otp'),
+    ], 200);
 });
 
 // route send message
